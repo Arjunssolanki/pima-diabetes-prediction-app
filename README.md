@@ -34,32 +34,35 @@ The project is decoupled into modular steps ensuring reproducibility, testabilit
 
 ---
 
-## 📂 Repository Structure
+## 📁 Repository Structure
 
+```text
 pima-diabetes-prediction-app/
-│
 ├── .github/
-│ └── workflows/
-│ └── ci.yaml # CI/CD pipeline for automated build & testing
+│   └── workflows/
+│       └── ci.yaml             # CI/CD pipeline for automated build & testing
 ├── app/
-│ └── main.py # Streamlit interactive web application
+│   └── main.py                 # Streamlit interactive web application
 ├── data/
-│ ├── processed/ # Cleaned and normalized datasets (diabetes_clean.csv)
-│ └── raw/ # Unprocessed original data from S3
-├── models/ # Serialized production model binaries (.pkl / .joblib)
-├── notebooks/ # Scratchpad notebooks for exploratory data analysis
+│   ├── processed/              # Cleaned and normalized datasets (diabetes_clean.csv)
+│   └── raw/                    # Unprocessed original data from S3
+├── models/                     # Serialized production model binaries (.pkl / .joblib)
+├── notebooks/                  # Scratchpad notebooks for exploratory data analysis
 ├── src/
-│ ├── **init**.py
-│ ├── data_loader.py # Cloud ingestion and schema validation scripts
-│ ├── feature_selection.py # L1 regularization and variance thresholding
-│ ├── preprocessing.py # QQ-plot analysis, Box-Cox, and Yeo-Johnson transformers
-│ └── train.py # Multi-model training suite, SMOTE integration, & tuning
+│   ├── __init__.py
+│   ├── data_loader.py          # Cloud ingestion and schema validation scripts
+│   ├── feature_selection.py    # L1 regularization and variance thresholding
+│   ├── preprocessing.py        # QQ-plot analysis, Box-Cox, and Yeo-Johnson transformers
+│   └── train.py                # Multi-model training suite, SMOTE integration, & tuning
 ├── tests/
-│ └── test_preprocessing.py # Unit tests for transformation logic and pipeline stability
+│   └── test_preprocessing.py   # Unit tests for transformation logic and pipeline stability
+├── .dockerignore
 ├── .gitignore
-├── config.yaml # Centralized configuration (S3 paths, parameters, columns)
-├── README.md # Project documentation
-└── requirements.txt # Environment dependencies
+├── Dockerfile                  # Containerization setup for production deployment
+├── config.yaml                 # Centralized configuration (S3 paths, parameters, columns)
+├── README.md                   # Project documentation
+└── requirements.txt            # Environment dependencies
+```
 
 # 🔬 Data Preparation, Cleaning & ML Methods Explained
 
