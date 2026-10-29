@@ -1,0 +1,31 @@
+# Git version control
+.git
+.gitignore
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & Editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Testing & CI
+.github/
+tests/
+.pytest_cache/
+
+# Local model artifacts & logs (let the app auto-train or load cleanly)
+*.joblib
+mlruns/
+*.log
+
+# Documentation
+README.md
