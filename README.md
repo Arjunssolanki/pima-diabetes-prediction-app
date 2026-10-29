@@ -189,6 +189,33 @@ This project delivers an end-to-end, production-ready MLOps solution for clinica
 - **Clinical Decision Support:** Leverages probability divergence between Random Forest (conservative) and XGBoost (high-sensitivity) to flag borderline clinical cases.
 - **Production Quality:** Fully validated through automated unit testing (`pytest`) and continuous integration via **GitHub Actions**.
 
-```
+## 🐳 Docker Containerization
 
-```
+This application is fully containerized for seamless, environment-agnostic deployment.
+
+### 🔨 Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running locally.
+
+---
+
+### 🚀 How to Run with Docker
+
+1. **Build the Docker Image:**
+   ```bash
+   docker build -t pima-diabetes-app .
+   ```
+2. **Run the Container:**
+   ```bash
+   docker run -d -p 8501:8501 --name pima-app pima-diabetes-app
+   ```
+3. **Access the Dashboard:**
+   Open your browser and navigate to:
+   ```bash
+   http://localhost:8501
+   ```
+4. **Stopping and Cleaning Up:**
+   To stop and remove the container when you are finished:
+   ```bash
+    docker stop pima-app && docker rm pima-app
+   ```
