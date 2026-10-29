@@ -1,0 +1,31 @@
+# .gitignore
+
+# Environments & Dependencies
+.venv/
+env/
+venv/
+ENV/
+
+# Python caching mechanisms
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data Lake Storage & Serialization Models (Generated locally via pipelines)
+data/
+models/
+.ipynb_checkpoints/
+
+# IDE Configuration folders
+.vscode/
+.idea/
+
+# Environment Variables & Secret Management Keys
+.env
+
+# Microsoft Word Documents (Strict Block)
+*.doc
+*.docx
+*.docm
+~$*.doc
+~$*.docx

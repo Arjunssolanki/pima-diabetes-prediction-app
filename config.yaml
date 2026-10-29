@@ -1,0 +1,21 @@
+# config.yaml
+data:
+  s3_bucket: "pima-diabetes-data-lake"
+  s3_key: "raw/diabetes.csv"
+  columns:
+    - "Pregnancies"
+    - "Glucose"
+    - "BloodPressure"
+    - "SkinThickness"
+    - "Insulin"
+    - "BMI"
+    - "DiabetesPedigreeFunction"
+    - "Age"
+    - "Outcome"
+  target: "Outcome"
+  raw_path: "data/raw/diabetes.csv"
+  processed_path: "data/processed/diabetes_clean.csv"
+
+model:
+  random_state: 42
+  test_size: 0.2
