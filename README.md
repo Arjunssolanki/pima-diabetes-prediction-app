@@ -1,4 +1,4 @@
-[![CI Pipeline](https://github.com/Arjunssolanki/pima-diabetes-prediction-app/actions/workflows/ci.yaml/badge.svg)](https://github.com/Arjunssolanki/pima-diabetes-prediction-app/actions/workflows/ci.yaml)
+[![CI Pipeline](https://github.com/Arjunssolanki/pima-diabetes-prediction-app/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/Arjunssolanki/pima-diabetes-prediction-app/actions/workflows/ci.yaml)
 
 # 📊 Pima Diabetes Prediction App
 
